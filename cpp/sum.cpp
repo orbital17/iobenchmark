@@ -5,13 +5,15 @@ int main()
     int sum = 0;
     int n, vi;
 
-    std::cin >> n;
+    std::ios_base::sync_with_stdio(false);
+
+    std::scanf("%d", &n);
 
     for (int i = 0; i < n; i++)
     {
-        std::cin >> vi;
+        std::scanf("%d", &vi);
         sum += vi;
     }
-    std::cout << sum << std::endl;
+    std::printf("%d\n", sum);
     return 0;
 }
